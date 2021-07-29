@@ -50,6 +50,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'sabeesh-ng'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_d875395ce9ee43478002c0d3d1421be2 }}
-        package: .
+        package: ./dist/angulardemo
